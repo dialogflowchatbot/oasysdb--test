@@ -41,7 +41,7 @@ fn main() {
     let mut collection = Collection::new(&config);
     collection.set_dimension(384);
     let id = collection.insert(&record1).unwrap();
-    let mut db = Database::new("data/search1").unwrap();
+    let mut db = Database::new("data/search2").unwrap();
     db.save_collection("vectors", &collection).unwrap();
     db.flush();
     
